@@ -22,22 +22,45 @@
         align-items: center;
       }
 
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
       .button {
         padding: 15px 30px;
-        background-color: #007bff;
-        color: white;
         text-decoration: none;
         border-radius: 5px;
         font-size: 16px;
         transition: background-color 0.3s ease;
+        color: white;
+        text-align: center;
       }
 
-      .button:hover {
+      .prototype {
+        background-color: #007bff;
+      }
+
+      .prototype:hover {
         background-color: #0056b3;
+      }
+
+      .youtube {
+        background-color: #ff0000;
+      }
+
+      .youtube:hover {
+        background-color: #cc0000;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <a href="http://3.25.174.188:3000/" class="button">Click here for prototype</a>
+    <div class="container">
+      <a href="http://3.25.174.188:3000/" class="button prototype">Click here for prototype</a>
+      <a href="https://www.youtube.com/watch?v=g51flTEwPL0" class="button youtube">Prototype link</a>
+    </div>
   </body>
 </html>
